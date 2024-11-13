@@ -13,8 +13,8 @@ pipeline {
             }
             steps {
 
-                git config --global user.email "jenkins@om4r932.fr"
-                git config --global user.name "Omar"
+                sh 'git config --global user.email "jenkins@om4r932.fr"'
+                sh 'git config --global user.name "Omar"'
               
                 sh 'git tag -a \$GIT_TAG -m \"[Jenkins CI] New Tag\"'
                 sh 'git push origin \$GIT_TAG'
