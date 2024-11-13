@@ -9,7 +9,7 @@ pipeline {
 
         stage('Release tag') {
             environment {
-                GIT_TAG = "Version-1.$BUILD_NUMBER"
+                GIT_TAG = "Version-1.$BUILD_NUMBER-Pipe"
             }
             steps {
               
